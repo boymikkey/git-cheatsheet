@@ -21,6 +21,7 @@ git push origin main (or master or branch-name)
 - git branch 
 - git checkout (name of branch): switches between branches
 - git checkout -b feature-branch-readme-instructions
+- git --set-upstream origin (name of new branch you wish to create)
 
 # Merge
 - git diff (name of the branch): checks diffference between branches and main
