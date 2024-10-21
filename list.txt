@@ -15,6 +15,10 @@ git commit -m "commit description"
 git commit -m "commit description" -m "commit description box"
 git push origin main (or master or branch-name)
 
+# initialize repo locally and push to remote repo
+git init
+git remote add origin {git@github.com:remote-repo}
+git push -u origin (to set upstream)
 
 
 # Branching
@@ -26,3 +30,6 @@ git push origin main (or master or branch-name)
 # Merge
 - git diff (name of the branch): checks diffference between branches and main
 - git merge
+
+# Delete Branch
+- git branch -d {name of branch}
