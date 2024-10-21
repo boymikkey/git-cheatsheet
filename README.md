@@ -27,3 +27,4 @@ git status
 git add
 git commit -m "commit description"
 git commit -m "commit description" -m "commit description box"
+git push origin main (or master or branch-name)
