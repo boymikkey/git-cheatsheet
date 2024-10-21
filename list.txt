@@ -27,5 +27,5 @@ git push origin main (or master or branch-name)
 - git diff (name of the branch): checks diffference between branches and main
 - git merge
 
-# Pull requests
+# Pull requests (pull requests should be called from main branch locally)
 - git pull origin (name of main branch you request the branch to merge to)
