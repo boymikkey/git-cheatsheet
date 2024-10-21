@@ -25,7 +25,7 @@ git push -u origin (to set upstream)
 - git branch 
 - git checkout (name of branch): switches between branches
 - git checkout -b feature-branch-readme-instructions
-- git --set-upstream origin (name of new branch you wish to create)
+- git push --set-upstream origin (name of new branch you wish to create)
 
 # Merge
 - git diff (name of the branch): checks diffference between branches and main
@@ -33,3 +33,6 @@ git push -u origin (to set upstream)
 
 # Delete Branch
 - git branch -d {name of branch}
+
+# Pull requests (pull requests should be called from main branch locally)
+- git pull origin (name of main branch you request the branch to merge to)
