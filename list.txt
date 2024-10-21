@@ -36,3 +36,16 @@ git push -u origin (to set upstream)
 
 # Pull requests (pull requests should be called from main branch locally)
 - git pull origin (name of main branch you request the branch to merge to)
+
+
+# Merge Conflicts: When a change in a branch is different from actual files state of main, the branch cannot be merged with main
+
+
+# Undoing in git
+- git reset
+- git reset {name of file}
+
+- git reset HEAD~1 (Undo commit changes one 1 step back)
+
+# See all commit logs
+- git log
