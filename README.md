@@ -28,3 +28,10 @@ git add
 git commit -m "commit description"
 git commit -m "commit description" -m "commit description box"
 git push origin main (or master or branch-name)
+
+# initialize repo locally and push to remote repo
+git init
+git remote add origin {git@github.com:remote-repo}
+git push -u origin (to set upstream)
+
+

@@ -15,3 +15,8 @@ git commit -m "commit description"
 git commit -m "commit description" -m "commit description box"
 git push origin main (or master or branch-name)
 
+
+# Branching
+- git branch 
+- git checkout (name of branch): switches between branches
+- git checkout -b feature-branch-readme-instructions
