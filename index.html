@@ -1,10 +1,154 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git Tutorials</title>
+    <style>
+        body {
+            background-color: rgb(83, 83, 83);
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .main {
+            margin: 0 auto;
+            max-width: 1500px;
+        }
+
+        .code__section {
+            padding: 20px;
+        }
+
+        pre {
+            background-color: #1f1e1e;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            overflow: auto;
+        }
+
+        a {
+            color: rgb(240, 228, 228);
+        }
+
+        code {
+            white-space: pre; /* Maintain whitespace formatting */
+        }
+
+        p {
+            font-size: 18px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .title {
+            padding: 30px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
 </head>
+
 <body>
-    <p>Boymikkey Git Tutorials</p>
+    <div class="main">
+        <h2 class="title">Git Cheat Sheet</h2> <span><i>by boymikkey</i></span>
+
+        <p><b> Generate SSH keys in terminal</b></p>
+        <div class="code__section">
+            <pre><code>
+- ssh-keygen -t rsa -b 4096 -C "youremail@email.com"
+            </code></pre>
+        </div>
+
+        <p><b> Locate the generated keys</b></p>
+        <div class="code__section">
+            <pre><code>
+- ls | grep testkey
+- cat testkey.pub
+            </code></pre>
+        </div>
+
+        <p>
+            <b>Learn how to generate SSH keys and add them to ssh-agent: 
+                <a style="color: rgb(210, 219, 219);" href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">
+                    *** Click here ****
+                </a>
+            </b>
+        </p>
+
+        <div class="code__section">
+            <pre><code>
+- git clone
+- git status
+- git add .
+- git commit -m "commit description"
+- git commit -m "commit description" -m "commit description box"
+- git push origin main (or master or branch-name)
+            </code></pre>
+        </div>
+
+        <p><b>Initialize repo locally and push to remote repo</b></p>
+        <div class="code__section">
+            <pre><code>
+- git init
+- git remote add origin {git@github.com:remote-repo}
+- git push -u origin (to set upstream)
+            </code></pre>
+        </div>
+
+        <p><b>Branching</b></p>
+        <div class="code__section">
+            <pre><code>
+- git branch
+- git checkout (name of branch): switches between branches
+- git checkout -b feature-branch-readme-instructions
+- git push --set-upstream origin (name of new branch you wish to create)
+            </code></pre>
+        </div>
+
+        <p><b>Merge</b></p>
+        <div class="code__section">
+            <pre><code>
+- git diff (name of the branch): checks difference between branches and main
+- git merge
+            </code></pre>
+        </div>
+
+        <p><b>Delete Branch</b></p>
+        <div class="code__section">
+            <pre><code>
+- git branch -d {name of branch}
+            </code></pre>
+        </div>
+
+        <p><b>Pull requests (pull requests should be called from main branch locally)</b></p>
+        <div class="code__section">
+            <pre><code>
+- git pull origin (name of main branch you request the branch to merge to)
+            </code></pre>
+        </div>
+
+
+        <p><b>Undoing in git</b></p>
+        <div class="code__section">
+            <pre><code>
+- git reset
+- git reset {name of file}
+- git reset HEAD~1 (Undo commit changes one step back)
+            </code></pre>
+        </div>
+
+        <p><b>See all commit logs</b></p>
+        <div class="code__section">
+            <pre><code>
+- git log
+            </code></pre>
+        </div>
+
+        <p><b><i>Merge Conflicts: When a change in a branch is different from actual files state of main, the branch cannot be merged with main</i></b></p>
+
+    </div>
 </body>
+
 </html>
